@@ -37,3 +37,7 @@
 // let data2 = undefined
 // console.log(typeof data2);
 // task7
+// let login = prompt("What is your login?");
+// let email = prompt("What is your email?");
+// let password = prompt("What is your password?");
+// console.log("Dear",login,"your email is",email,"your password is",password );
