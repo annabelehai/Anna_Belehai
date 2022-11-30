@@ -41,3 +41,17 @@
 // let email = prompt("What is your email?");
 // let password = prompt("What is your password?");
 // console.log("Dear",login,"your email is",email,"your password is",password );
+// // task8
+// let x = "60";
+// let y = "60";
+// let z = x * y;
+// console.log("1 hour =", z,"seconds");
+// let a = "60";
+// let b = "60";
+// let h = "24";
+// let s = a * b * h;
+// console.log("24 hours =", s,"seconds");
+// let m = prompt("How many days are in the current month?");
+// let d = "86400";
+// let f = m * d;
+// console.log("current month =", f,"seconds");
