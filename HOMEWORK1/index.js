@@ -34,7 +34,7 @@
 
 // let data1 = null
 // console.log(typeof data1);
-// let data2 = undefined
+// let data2;
 // console.log(typeof data2);
 // task7
 // let login = prompt("What is your login?");
