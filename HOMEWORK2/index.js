@@ -33,3 +33,6 @@
 // console.log( arr1[4] );
 // arr1.shift();
 // alert(arr1);
+// // task4
+// const cities = ["Rome", "Lviv", "Warsaw"];
+// console.log(cities[0] + "*" + cities[1] + "*" + cities[2]);
