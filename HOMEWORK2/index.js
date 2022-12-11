@@ -33,6 +33,65 @@
 // console.log( arr1[4] );
 // arr1.shift();
 // alert(arr1);
-// // task4
+ // task4
 // const cities = ["Rome", "Lviv", "Warsaw"];
 // console.log(cities[0] + "*" + cities[1] + "*" + cities[2]);
+ // task5
+// let isAdult1 = prompt ("How old are you?");
+// if (isAdult1 >= 18 ) {
+//     alert("You have already reached the age of majority");
+// } else if (isAdult1 < 18 ) {
+//     alert("You are too young");
+// };
+// // task7
+//if..else..if statement
+// let date = new Date ();
+// let hours = (date.getHours());
+// let data1 = hours;
+// if (data1 = 23|0|1|2|3|4){
+//     alert("Доброї ночі");
+// }
+// else if (data1 = 5|6|7|8|9|10) {
+//     alert("Доброго ранку");
+// }
+// else if(data1 = 11|12|13|14|15|16) {
+//     alert("Доброго дня");
+// }
+// else{
+//     alert("Доброго вечора");
+// }
+//switch statement.
+// let date1 = new Date ();
+// let hours1 = (date1.getHours());
+// let data1 = hours1;
+// switch(data1){
+
+//     case 23 :
+//     case 0 :
+//     case 1:
+//     case 2:
+//     case 3: 
+//     case 4:  
+//          alert("Доброї ночі");
+//          break;
+//     case 5 :
+//     case 6 :
+//     case 7:
+//     case 8:
+//     case 9: 
+//     case 10: 
+//          alert("Доброго ранку");
+//          break;
+//     case 11 :
+//     case 12 :
+//     case 13:
+//     case 14:
+//     case 15: 
+//     case 16:
+//         alert("Доброго дня");   
+//          break;   
+
+//     default: 
+//          alert("Доброго вечора");
+//          break;
+//  }
