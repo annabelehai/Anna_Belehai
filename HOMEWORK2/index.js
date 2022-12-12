@@ -43,7 +43,33 @@
 // } else if (isAdult1 < 18 ) {
 //     alert("You are too young");
 // };
-// // task7
+// task6
+//a) визначити і вивести в консоль площу трикутника 
+let A = prompt ("Enter any value for A side of a triangle" );
+let B = prompt ("Enter any value for B side of a triangle" );
+let C = prompt ("Enter any value for C side of a triangle" );
+A = Number(A);
+B = Number(B);
+C = Number(C);
+
+const p = ((A+B+C)/2);
+const S = Math.sqrt(p*(p-A)*(p-B)*(p-C));
+console.log(S);
+// //	b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки.
+let a = Math.sqrt(A);
+let b = Math.sqrt(B);
+let c = Math.sqrt(C);
+let data2 = c
+let data1 = a + b
+data2 = Number(data2);
+data1 = Number(data1);
+
+    if (data1 = data2){
+        console.log("Never done");​
+    } else {​
+       console.log("Never done");​
+    }​
+//  task7
 //if..else..if statement
 // let date = new Date ();
 // let hours = (date.getHours());
@@ -71,7 +97,7 @@
 //     case 1:
 //     case 2:
 //     case 3: 
-//     case 4:  
+//     case 4: 
 //          alert("Доброї ночі");
 //          break;
 //     case 5 :
