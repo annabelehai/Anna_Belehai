@@ -45,32 +45,32 @@
 // };
 // task6
 //a) визначити і вивести в консоль площу трикутника 
-let A = prompt ("Enter any value for A side of a triangle" );
-let B = prompt ("Enter any value for B side of a triangle" );
-let C = prompt ("Enter any value for C side of a triangle" );
-A = Number(A);
-B = Number(B);
-C = Number(C);
+// let A = prompt ("Enter any value for A side of a triangle" );
+// let B = prompt ("Enter any value for B side of a triangle" );
+// let C = prompt ("Enter any value for C side of a triangle" );
+// A = Number(A);
+// B = Number(B);
+// C = Number(C);
 
-const p = ((A+B+C)/2);
-const S = Math.sqrt(p*(p-A)*(p-B)*(p-C));
-console.log(S);
-// //	b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки.
-let a = Math.sqrt(A);
-let b = Math.sqrt(B);
-let c = Math.sqrt(C);
-let data2 = c
-let data1 = a + b
-data2 = Number(data2);
-data1 = Number(data1);
+// const p = ((A+B+C)/2);
+// const S = Math.sqrt(p*(p-A)*(p-B)*(p-C));
+// console.log(S);
+// // //	b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки.
+// let a = Math.sqrt(A);
+// let b = Math.sqrt(B);
+// let c = Math.sqrt(C);
+// let data2 = c
+// let data1 = a + b
+// data2 = Number(data2);
+// data1 = Number(data1);
 
-    if (data1 = data2){
-        console.log("Never done");​
-    } else {​
-       console.log("Never done");​
-    }​
+//     if (data1 = data2){
+//         console.log("");​
+//     } else {​
+//        console.log("");​
+//     }​
 //  task7
-//if..else..if statement
+// if..else..if statement
 // let date = new Date ();
 // let hours = (date.getHours());
 // let data1 = hours;
@@ -86,7 +86,7 @@ data1 = Number(data1);
 // else{
 //     alert("Доброго вечора");
 // }
-//switch statement.
+// switch statement.
 // let date1 = new Date ();
 // let hours1 = (date1.getHours());
 // let data1 = hours1;
