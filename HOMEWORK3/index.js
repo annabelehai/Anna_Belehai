@@ -58,3 +58,28 @@
 //   } else {
 //     alert( raiseToDegree(a, b) );
 //   }
+//task6 функцію findUnique(arr), яка приймає масив arr і перевіряє на унікальність його елементи. 
+// let a = prompt("Enter your number");
+// let b = prompt("Enter your number");
+// let c = prompt("Enter your number");
+// let d = prompt("Enter your number");
+// let arr = [a, b, c, d ];
+// function findUnique(A)
+// { 
+// let n = arr.length;
+// for (let i = 0; i < n-1; i++)
+// { for (let j = i+1; j < n; j++)
+// { if (arr[ i ] === arr[j]) return false; }
+// }
+// return true;
+// }
+// console.log(findUnique(arr));
+
+//task8
+// функцію, яка приймає рядок як параметр і перетворює першу букву кожного слова рядка в верхній регістр.
+// function capitalizeWords(arr) {
+//     return arr.map(element => {
+//       return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+//     });
+//   }
+//   console.log(capitalizeWords(['i', 'love' , 'java','script']));
