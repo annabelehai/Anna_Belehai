@@ -2,14 +2,25 @@
 // height і обраховує його площу. Передбачити припинення виконання програми і генерацію винятку у випадку,
 //  якщо функції передано не числові параметри.
 
-// let height = prompt ("Enter your value for height");
-// let width = prompt("Enter your value for width");
-// function calcRectangleArea( ) {
-// if (height|width == String);{
-//     throw new Error("Line length greater than 4 characters");
-// }else{
-//     return
+
+// function calcRectangleArea( ){
+// let height = +prompt ("Enter your value for height");
+// let width = +prompt("Enter your value for width");
+// if (isNaN(height)){
+//     throw new Error("your value for height is not a number");
 // }
+// else if (isNaN(width))
+// throw new Error("your value for width is not a number")
+// }
+
+
+
+// try{
+//     calcRectangleArea();
+// } catch(exception){
+//    console.log(exception.message);
+// }
+
 // console.log(calcRectangleArea);
 
 //  S = 1/2 * width * height;
