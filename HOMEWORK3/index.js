@@ -58,6 +58,17 @@
 //   } else {
 //     alert( raiseToDegree(a, b) );
 //   }
+
+// task 5 findMin(), яка повинна приймати довільну кількість числових аргументів і повертати той, який має найменше значення.
+// function findMin(){
+//     let min = arr[0];
+//     for (i =1; i< arguments.length; i++) {
+//     if (arr[i] < min) {
+//     min = arr[i];
+//     }
+//     return min;
+// }
+// console.log(findMin[1])
 //task6 функцію findUnique(arr), яка приймає масив arr і перевіряє на унікальність його елементи. 
 // let a = prompt("Enter your number");
 // let b = prompt("Enter your number");

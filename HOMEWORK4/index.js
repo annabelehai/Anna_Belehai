@@ -2,29 +2,25 @@
 // height і обраховує його площу. Передбачити припинення виконання програми і генерацію винятку у випадку,
 //  якщо функції передано не числові параметри.
 
+function calcRectangleArea( ){
+let height = +prompt("Please enter your value for height");
+let width =  +prompt("Please enter your value for width");
+if (isNaN(height)){
+    throw new Error("your value for height is not a number");
+}
+else if (isNaN(width))
+throw new Error("your value for width is not a number");
+}
 
-// function calcRectangleArea( ){
-// let height = +prompt ("Enter your value for height");
-// let width = +prompt("Enter your value for width");
-// if (isNaN(height)){
-//     throw new Error("your value for height is not a number");
-// }
-// else if (isNaN(width))
-// throw new Error("your value for width is not a number")
-// }
-
-
-
-// try{
-//     calcRectangleArea();
-// } catch(exception){
-//    console.log(exception.message);
-// }
+try{
+    calcRectangleArea();
+} catch(exception){
+   console.log(exception.message);
+}
 
 // console.log(calcRectangleArea);
 
-//  S = 1/2 * width * height;
-//  console.log(S);
+
 
 
 //  task2   
@@ -50,3 +46,6 @@
 // } catch(exception){
 //    console.log(exception.message);
 // }
+//task 3 функцію showMonthName(month), в якій параметр month – це порядковий номер місяця в році. Функція повертає назву місяця
+//  відповідно до введеного номера місяця. У випадку некоректного вводу кидається ексепшн у вигляді об’єкта класу MonthException з 
+//  /повідомленням 'Incorrect month number'.
