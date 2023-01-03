@@ -5,13 +5,15 @@
 function calcRectangleArea( ){
 let height = +prompt("Please enter your value for height");
 let width =  +prompt("Please enter your value for width");
+let S = 1/2 * height * width;
 if (isNaN(height)){
     throw new Error("your value for height is not a number");
 }
-else if (isNaN(width))
+else if (isNaN(width)){
 throw new Error("your value for width is not a number");
 }
-
+return S;
+}
 try{
     calcRectangleArea();
 } catch(exception){
