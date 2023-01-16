@@ -142,44 +142,56 @@
 
 // *************************************task 5******************************
 
-class GeometricFigure {
-    getArea() {
-return 0;
-}
-toString() {
-     return Object.getPrototypeOf(this).constructor.name;
-}
-     }
+// class GeometricFigure {
+//     getArea() {
+// return 0;
+// }
+// toString() {
+//      return Object.getPrototypeOf(this).constructor.name;
+// }
+//      }
 
-class Triangle extends GeometricFigure {
+// class Triangle extends GeometricFigure {
     
-        constructor(side1, height) {
-            super();
-            this.side1 = side1;
-            this.height = height;
-        }
-        getArea() {
-            return this.side1 * this.height / 2;
-    }
-}
+//         constructor(side1, height) {
+//             super();
+//             this.side1 = side1;
+//             this.height = height;
+//         }
+//         getArea() {
+//             return this.side1 * this.height / 2;
+//     }
+// }
 
-class Square extends GeometricFigure {
-    constructor(side) {
-        super();
-        this.side = side;
-    }
-    getArea() {
-        return this.side * this.side;
-    }
-}
+// class Square extends GeometricFigure {
+//     constructor(side) {
+//         super();
+//         this.side = side;
+//     }
+//     getArea() {
+//         return this.side * this.side;
+//     }
+// }
 
-class Circle extends GeometricFigure {
-    constructor(r) {
-        super();
-        this.r = r;
-    }
-    getArea() {
-        return Math.PI * this.r * this.r;
-    }
-}
+// class Circle extends GeometricFigure {
+//     constructor(r) {
+//         super();
+//         this.r = r;
+//     }
+//     getArea() {
+//         return Math.PI * this.r * this.r;
+//     }
+// }
 
+// function handleFigures(figures){
+//     return figures.reduce(function(sum, figure){
+//        if (figure instanceof GeometricFigure) {
+//         console.log(`Geometric figure: ${figure.toString()} - area: ${figure.getArea()}`);
+//         return sum + figure.getArea();
+//        }
+//        throw new Error('Invalid argument figure')
+//     }, 0);
+// }
+
+// const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
+//     	console.log(handleFigures(figures));
