@@ -68,87 +68,118 @@
 // console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych
 // console.log("Current course: " + stud1.showCourse()); //Current course: 6
 
-// task 4. Створіть клас Worker який буде мати конструктор, який приймає наступні властивості:
-//  fullName (ім’я і прізвище), dayRate (ставка за день роботи), workingDays (кількість відпрацьованих днів). 
+// ******************************************************task 4*****************************************
 
-const workerList = [];
+// const workerList = [];
 
-class Worker {
-    #experiance = 1.2;
+// class Worker {
+//     #experiance = 1.2;
 
-        constructor(fullName , dayRate, workingDays){
-            this.fullName  = fullName ;
-            this.dayRate = dayRate;
-            this. workingDays = workingDays;
-            workerList.push(this);
+//         constructor(fullName , dayRate, workingDays){
+//             this.fullName  = fullName ;
+//             this.dayRate = dayRate;
+//             this. workingDays = workingDays;
+//             workerList.push(this);
+//         }
+//             showSalary() { 
+//     console.log(`${this.fullName} salary: ${this.dayRate * this.workingDays}`);
+// }  
+// showSalaryWithExperience() { 
+//     console.log(`${this.fullName} salary: ${this.dayRate * this.workingDays * this.#experiance}`); 
+// }
+// showSalaryWorker() {
+//     return `${this.dayRate * this.workingDays * this.#experiance}`;
+// }
+// get showExp(){
+//     return this.#experiance;
+// }
+// set setExp(experiance){
+//     this.#experiance = experiance;
+// }
+
+// sortSalaries(workersArray){ 
+//     let sortedSalaries = workersArray.sort(function(a,b){
+//         return a.showSalaryWorker() - b.showSalaryWorker();
+//     })
+//     // console.log(sortedSalaries);
+//     for (let i = 0; i < sortedSalaries.length; i++){
+//         console.log(sortedSalaries[i].fullName + ":" + sortedSalaries[i].showSalaryWorker());
+//     }
+// }
+// }
+
+// let worker1 = new Worker("John Johnson", 20, 23);
+// console.log(worker1.fullName);                 
+// worker1.showSalary();
+// console.log("New experience: " + worker1.showExp);
+// worker1.showSalaryWithExperience();
+// worker1.setExp = 1.5;
+// console.log("New experience: " + worker1.showExp);
+// worker1.showSalaryWithExperience();
+// console.log("------------------")
+
+// let worker2 = new Worker("Tom Tomson", 48, 22);
+// console.log(worker1.fullName);                 
+// worker2.showSalary();
+// console.log("New experience: " + worker2.showExp);
+// worker2.showSalaryWithExperience();
+// worker2.setExp = 1.5;
+// console.log("New experience: " + worker2.showExp);
+// worker2.showSalaryWithExperience();
+// console.log("------------------")
+
+// let worker2 = new Worker("Andy Ander", 29, 23);
+// console.log(worker1.fullName);                 
+// worker2.showSalary();
+// console.log("New experience: " + worker2.showExp);
+// worker2.showSalaryWithExperience();
+// worker2.setExp = 1.5;
+// console.log("New experience: " + worker2.showExp);
+// worker2.showSalaryWithExperience();
+// console.log("------------------")
+
+// worker1.sortSalaries(workerList);
+
+// *************************************task 5******************************
+
+class GeometricFigure {
+    getArea() {
+return 0;
+}
+toString() {
+     return Object.getPrototypeOf(this).constructor.name;
+}
+     }
+
+class Triangle extends GeometricFigure {
+    
+        constructor(side1, height) {
+            super();
+            this.side1 = side1;
+            this.height = height;
         }
-            showSalary() { 
-    console.log(`${this.fullName} salary: ${this.dayRate * this.workingDays}`);
-}  
-showSalaryWithExperience() { 
-    console.log(`${this.fullName} salary: ${this.dayRate * this.workingDays * this.#experiance}`); 
-}
-showSalaryWorker() {
-    return `${this.dayRate * this.workingDays * this.#experiance}`;
-}
-get showExp(){
-    return this.#experiance;
-}
-set setExp(experiance){
-    this.#experiance = experiance;
-}
-
-sortSalaries(workersArray){ 
-    let sortedSalaries = workersArray.sort(function(a,b){
-        return a.showSalaryWorker() - b.showSalaryWorker();
-    })
-    // console.log(sortedSalaries);
-    for (let i = 0; i < sortedSalaries.length; i++){
-        console.log(sortedSalaries[i].fullName + ":" + sortedSalaries[i].showSalaryWorker());
+        getArea() {
+            return this.side1 * this.height / 2;
     }
 }
+
+class Square extends GeometricFigure {
+    constructor(side) {
+        super();
+        this.side = side;
+    }
+    getArea() {
+        return this.side * this.side;
+    }
 }
 
-let worker1 = new Worker("John Johnson", 20, 23);
-console.log(worker1.fullName);                 
-worker1.showSalary();
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
-worker1.setExp = 1.5;
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
-console.log("------------------")
+class Circle extends GeometricFigure {
+    constructor(r) {
+        super();
+        this.r = r;
+    }
+    getArea() {
+        return Math.PI * this.r * this.r;
+    }
+}
 
-let worker2 = new Worker("Tom Tomson", 48, 22);
-console.log(worker1.fullName);                 
-worker2.showSalary();
-console.log("New experience: " + worker2.showExp);
-worker2.showSalaryWithExperience();
-worker2.setExp = 1.5;
-console.log("New experience: " + worker2.showExp);
-worker2.showSalaryWithExperience();
-console.log("------------------")
-
-worker1.sortSalaries(workerList);
-
-//  task 5.
-// class GeometricFigure {
-//     getArea() {
-// return 0;
-// }
-// toString() {
-//      return Object.getPrototypeOf(this).constructor.name;
-// }
-//      }
-
-// class Triangle extends GeometricFigure {
-    
-//         constructor(side1, side2) {
-          
-//             this.side1 = side1;
-//             this.side2 = side2;
-//         }
-//     }
-
-// const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
-//     	console.log(handleFigures(figures));2
